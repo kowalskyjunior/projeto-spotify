@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.clear{
+    clear: both;
+}
+
+html, body{
+    height: 135%;
+}
+
+.main-side-bar{
+    float: left;
+    width: 250px;
+    height: calc(100% - 20%);
+    padding: 10px 10px;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+.side-bar-logo img{
+    width: 220px;
+    text-align: center;
+}
+
+.menu-side-bar{
+    padding: 10px;
+}
+
+.fa-home, .fa-search, .fa-database{
+    margin-right: 10px;
+}
+
+.menu-side-bar a{
+    display: block;
+    text-decoration: none;
+    color: #ccc;
+    padding: 10px;
+}
+
+.menu-side-bar .selected{
+    background-color: #cccccc81;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.playlist-side-bar{
+    padding: 5px;
+    color: #ccc;
+}
+
+.playlist-side-bar h2{
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.create-playlist{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.create-playlist span{
+    position: relative;
+    top: 6px;
+    color: #000;
+}
+
+.create-playlist{
+    display: inline-block;
+
+}
+
+.create-playlist-span{
+    display: inline-block;
+}
+
+.create-playlist-span span{
+    position: relative;
+    top: 5px;
+    margin-left: 15px;
+}
+
+.liked-songs img{
+    position: relative;
+    right: 2px;
+    margin-top: 10px;
+    width: 32px;
+    height: 30px;
+}
+
+.liked-songs span{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    top: -10px;
+}
+
+.liked-songs{
+    margin-bottom: 20px;
+}
+
+.playlist-single{
+    border-top:1px solid rgb(40,40,40);
+    padding: 20px 0px;
+}
+
+.playlist-single a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.playlist-single p{
+    margin: 10px 0px 10px 5px;
+}
+
+.main{
+    width: calc(100% - 250px);
+	background-color: rgb(30,30,30);
+	height: calc(100% + 200px);
+	padding:15px 50px;
+	overflow-y: auto;
+    float: right;
+}
+
+.main-line{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.main-line-title{
+    width: 100%;
+    padding: 10px;
+}
+
+.main-line-title h2{
+    color: #fff;
+
+}
+
+.main-col{
+    margin-right: 1%;
+    margin-top: 20px;
+    width: 20%;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-col p, .main-col-my, p{
+    margin-top: 10px;
+}
+
+.main-col-my{
+    margin-right: 1%;
+    margin-top: 20px;
+    width: 20%;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.main-col, .main-col-my h3{
+    color: #fff;
+}
+.main-col h3{
+    color: #fff;
+}
+
+.main-col-my{
+    float: left;
+}
+
+.main-col, .main-col-my p{
+    color: #cccccc73;
+}
+
+.player{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(60,60,60);
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    padding: 20px;
+    height: 20%;
+}
+
+.player-artist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-artist img{
+    width: 80px;
+    margin: 0px 10px 0px 0px;
+}
+
+.artist-name p{
+    display: inline;
+    position: relative;
+    top: -20%;
+    color: #fff;
+}
+
+.player-control{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+}
+
+.player-control-buttons a{
+    padding: 10px;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+}
+
+.player-control-progress{
+    background-color: #cccccc46;
+    text-align: center;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    height: 5px;
+}
+
+.main-col-my-hungria img{
+    width: 100%;
+    max-width: 122px;
+    text-align: center;
+}
+
+.player-artist{
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+}
+
+.artist-name p:nth-child(1){
+    font-size: 20px;
+}
+
+.artist-name p:nth-of-type(2){
+    font-size: 15px;
+    width: 500px;
+    color: #cccccc67;
+}
+
+@media (max-width: 1236px){
+    .main-col-my{
+        width: 33.3%;
+    }
+}
+
+@media (max-width:1024px){
+    .main-col{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 170px;
+        margin-top: 20px;
+        background-color: #282828;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:910px){
+
+}
+
+@media (max-width:768px){
+    .main-side-bar{
+        display: none;
+        float: none;
+    }
+
+    .main{
+        width: 100%;
+        background-color: rgb(30,30,30);
+        height: calc(100% + 1300px);
+        padding:15px 50px;
+        overflow-y: auto;
+        float: none;
+    }
+
+    .main-col{
+        margin: 0 auto;
+        width: 100%;
+        max-width: 170px;
+        margin-top: 20px;
+        background-color: #282828;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+    }   
+     .main-col-my{
+        width: 100%;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+}
