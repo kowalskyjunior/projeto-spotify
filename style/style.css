@@ -319,7 +319,8 @@ html, body{
         cursor: pointer;
     }   
      .main-col-my{
-        width: 100%;
+        width: 100%
+        margin: 20px 0;
     }
 
     h2{
